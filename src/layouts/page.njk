@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+<body>
+  <h1>{{ title }}</h1>
+  {% if page.url.includes('/articles/') %}
+    {% include './article.njk' %}
+  {% endif %}
+  {% if page.url.includes('/docs/') %}
+    {% include './doc.njk' %}
+  {% endif %}
+</body>

@@ -1,7 +1,6 @@
+---
+title: Read me
 author: igsekor
-tags:
-  - first
-  - second
-  - third
+override:tags: []
 ---
 # 11ty-json-merge

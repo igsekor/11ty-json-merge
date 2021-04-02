@@ -1,0 +1,10 @@
+<ul>
+{% for tag in tags %}
+  <li>{{ tag }}</li>
+{% else %}
+  <li>This would display if the 'tags' collection were empty</li>
+{% endfor %}
+</ul>
+<div class="article">
+  {{ content | safe }}
+</div>
