@@ -3,9 +3,11 @@
 <body>
   <h1>{{ title }}</h1>
   {% if page.url.includes('/articles/') %}
+    {% mergeInfo 'article.json' %}
     {% include './article.njk' %}
   {% endif %}
   {% if page.url.includes('/docs/') %}
+    {% mergeInfo 'doc.json' %}
     {% include './doc.njk' %}
   {% endif %}
 </body>
