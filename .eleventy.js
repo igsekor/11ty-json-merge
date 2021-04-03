@@ -8,7 +8,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
 
   // Add meta from custom JSON
-  eleventyConfig.addNunjucksShortcode('mergeInfo', (file) => {
+  eleventyConfig.addNunjucksShortcode('getInfo', (file) => {
     const json = require('./src/meta/' + file);
     return `<pre>${JSON.stringify(json)}</pre>`
   });
